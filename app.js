@@ -9,7 +9,8 @@ for (let i = 0; i < SQUARES_NUMBER; i++) {
     square.addEventListener('mouseover', () => {
         setColor(square)
     })
-    square.addEventListener('touchstart', () => {
+    square.addEventListener('touchstart', (e) => {
+    e.preventDefault()
         setColor(square)
     })
 
