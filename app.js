@@ -19,7 +19,7 @@ for (let i = 0; i < SQUARES_NUMBER; i++) {
     })
     square.addEventListener('touchmove', (e) => {
     e.preventDefault()
-        setColor(square)
+        removeColor(square)
     })
 
     board.append(square)
