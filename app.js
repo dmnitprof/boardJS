@@ -17,7 +17,7 @@ for (let i = 0; i < SQUARES_NUMBER; i++) {
     square.addEventListener('mouseleave', () => {
         removeColor(square)
     })
-    square.addEventListener('touchmove', (e) => {
+    square.addEventListener('touchend', (e) => {
     e.preventDefault()
         removeColor(square)
     })
